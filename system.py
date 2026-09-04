@@ -41,7 +41,7 @@ def menu():
             if opcao == 3:
                 print('-' * 30)
                 print('EXTRATO DE VALORES DE ENTRADA E SAIDA')
-                print('-' * 30)
+                print('-' * 20)
                 print('')
             for descri, valor in zip(desc, saldo):
                     print(f"- Descrição: {descri} / VALOR R${valor:.2f}")
