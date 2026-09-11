@@ -2,13 +2,13 @@ saldo = []
 desc = []
 
 def aumentar():
-    aumentar = float(input('- Digite o valor para acrescentar no saldo R$ '))
-    while aumentar <= 0:
+    aumentando = float(input('- Digite o valor para acrescentar no saldo R$ '))
+    while aumentando <= 0:
         print('<ERRO> - Digite um valor válido para aumentar do saldo.')
         aumentar = float(input('- Digite o valor para aumentar no saldo R$'))
-    saldo.append(aumentar)
+    saldo.append(aumentando)
     print('')
-    print(f'     Valor de R${aumentar:.2f} ADICIONADO.     ')
+    print(f'     Valor de R${aumentando:.2f} ADICIONADO.     ')
 
 def diminuir():
     diminuir = float(input('- Digite o valor para diminuir no saldo R$'))
@@ -39,16 +39,20 @@ def menu():
             
             opcao = int(input('Escolha a opção para atualizar o saldo: '))
 
+            if opcao < 1 or opcao > 4:
+                print('<ERRO> - Digite uma opção válida.')
+                continue
+       
 
-            if opcao == 1:
+            elif opcao == 1:
                     descricao()
                     aumentar()
 
-            if opcao == 2:
+            elif opcao == 2:
                     descricao()
                     diminuir()
 
-            if opcao == 3:
+            elif opcao == 3:
                     print('-' * 30)
                     print('HISTÓRICO DE VALORES DE ENTRADA E SAIDA')
                     print('')
@@ -56,13 +60,13 @@ def menu():
                         print(f"- Descrição: {descri} / VALOR R${valor:.2f}")
                         print('-' * 30)
                     print(f'- Saldo atual: R$ {sum(saldo):.2f}')
-            if opcao == 4:
+            elif opcao == 4:
                     print('Saindo do sistema...')
                     break
 
 
         except ValueError:
-            print('<ERRO> - Digite apenas números nas opções.')
+            print('<ERRO> - Digite apenas valores validos.')
 menu()
 
 
