@@ -1,9 +1,5 @@
-
-# Python
-__pycache__/
-*.py[cod]
-
-# Banco de dados
+@'
+# Bancos de dados
 *.db
 *.sqlite
 *.sqlite3
@@ -12,19 +8,27 @@ __pycache__/
 meses/*
 !meses/.gitkeep
 
-# PyInstaller
-build/
-dist/
-
 # Ferramentas SQLite
 sqlite3.exe
 sqldiff.exe
 sqlite3_analyzer.exe
 sqlite3_rsync.exe
 
-# Ambiente virtual
+# Executáveis
+*.exe
+
+# Python temporário
+__pycache__/
+*.py[cod]
+
+# Compilação
+build/
+dist/
+
+# Ambientes virtuais
 venv/
 .venv/
 
 # Logs
 *.log
+'@ | Set-Content -Encoding UTF8 .gitignore
