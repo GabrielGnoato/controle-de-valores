@@ -5,7 +5,7 @@
 * 📊 Gráfico integrado para visualização
 
 ## 🔎 A ideia desse programa nasceu de uma conversa entre amigos que anotavam todas as transações financeiras em um arquivo Excell, após alguns mesês de estudo com a ideia de criar algo que resolva o problema
-de alguém, decidi começar a desenvolver. É um sistema onde o foco é rodar totalmente local para que não seja necessário integrar a nuvem.
+## de alguém, decidi começar a desenvolver. É um sistema onde o foco é rodar totalmente local para que não seja necessário integrar a nuvem.
 
 ## 🛠️ Tecnologias Utilizadas
 * 💻 Python
